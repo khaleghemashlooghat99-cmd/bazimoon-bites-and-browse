@@ -148,6 +148,25 @@
     z-index: 1;
   }
 
+  /* Screen-edge vignette: linear gradients that start dark at each edge of the
+     viewport and fade to nothing toward the center. Fixed to the viewport, so
+     the darkening stays at the screen edge while the page scrolls. */
+  .menu-pattern-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgb(8 1 0 / 0.42), transparent 30%),
+      linear-gradient(to left, rgb(8 1 0 / 0.42), transparent 30%),
+      linear-gradient(to top, rgb(8 1 0 / 0.40), transparent 26%),
+      linear-gradient(to bottom, rgb(8 1 0 / 0.30), transparent 22%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+
   .menu-red-bg {
     background-color: rgb(198, 20, 26);
   }
