@@ -442,31 +442,13 @@
     background: hsl(0 84% 60% / 0.55);
   }
 
-  /* ---- Divider options preview (pizza page only) ---- */
-  .divider-options {
+  /* The three pizza-menu dividers, stacked with even spacing. Each variant
+     below is a standalone block, reusable anywhere in the menu. */
+  .menu-dividers {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem;
-    margin-top: 2rem;
-    padding: 1.25rem 1rem 1.5rem;
-    border: 1px dashed hsl(0 84% 60% / 0.35);
-    border-radius: 0.75rem;
-    background: hsl(0 0% 8% / 0.35);
-  }
-
-  .divider-option {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .divider-option-label {
-    margin: 0;
-    text-align: center;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    color: var(--muted-foreground);
+    gap: 2.1rem;
+    margin-top: 2.75rem;
   }
 
   .menu-divider--tight {
