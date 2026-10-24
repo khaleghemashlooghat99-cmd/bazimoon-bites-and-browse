@@ -1,0 +1,7 @@
+[
+ {"capability":"code","source":"Vite + React Router SPA","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"routes","source":"/, /category/:categoryId","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"assets","source":"src/assets","outcome":"migrate","status":"verified","next_action":"none"},
+ {"capability":"schema/records/auth","source":"none (menu data is static in code)","outcome":"not applicable","status":"verified","next_action":"none"},
+ {"capability":"external providers/secrets","source":"none; social links only","outcome":"not applicable","status":"verified","next_action":"none"}
+]
