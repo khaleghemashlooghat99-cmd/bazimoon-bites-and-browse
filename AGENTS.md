@@ -9,3 +9,4 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 - Menu content lives in src/data/menuData.ts as static data; no backend is used.
+- The contact section links out to the owner's own Google Maps pin instead of embedding a map, so no map key or connector is needed; keep address/phone text taken from the owner, not invented.
