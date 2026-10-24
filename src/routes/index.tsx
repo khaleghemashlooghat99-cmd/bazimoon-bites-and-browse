@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { Gamepad2, MapPin, Navigation, Phone, Sparkles } from "lucide-react";
+import { Clock, Gamepad2, MapPin, Navigation, Phone, Sparkles } from "lucide-react";
 import { SocialLinks } from "@/components/SocialIcons";
 import { menuData } from "@/data/menuData";
 import cafeBanner from "@/assets/cafe-banner.jpg";
@@ -10,6 +10,7 @@ const CAFE_MAPS_URL = "https://maps.app.goo.gl/UEVzTEA3SGY2uymy6";
 const CAFE_ADDRESS = "خیابان شهید صدوقی، جنب خیابان مهدیه، کافه بازیمون";
 const CAFE_PHONE_DISPLAY = "0912 999 4444";
 const CAFE_PHONE_TEL = "+989129994444";
+const CAFE_HOURS = "هر روز هفته از 12 تا 24 در خدمتتونیم";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -161,6 +162,16 @@ function Index() {
                 >
                   {CAFE_PHONE_DISPLAY}
                 </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-lg border border-primary/20 bg-background/30 px-4 py-3 text-right sm:col-span-2">
+              <Clock className="h-5 w-5 shrink-0 text-primary" />
+              <div>
+                <p className="text-xs text-muted-foreground">ساعت کاری</p>
+                <p className="text-sm leading-6 text-foreground/90 sm:text-base sm:leading-7">
+                  {CAFE_HOURS}
+                </p>
               </div>
             </div>
           </div>
