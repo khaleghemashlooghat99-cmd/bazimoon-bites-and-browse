@@ -131,7 +131,7 @@ function Index() {
 
         {/* Contact */}
         <section
-          className="mt-4 rounded-xl border border-primary/25 bg-background/40 px-5 py-6 shadow-card sm:px-8 sm:py-8"
+          className="mt-4 rounded-xl border border-primary/25 bg-background/40 px-5 py-6 text-center shadow-card sm:px-8 sm:py-8"
           style={{
             animation: "sectionEntrance 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both",
           }}
