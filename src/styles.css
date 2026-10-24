@@ -297,4 +297,55 @@
       transform: rotate(8deg) scale(1.08);
     }
   }
+
+  /* Ornamental rule that separates the menu grid from the about section. */
+  .menu-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 2.75rem 0 1.75rem;
+  }
+
+  .menu-divider-line {
+    flex: 1 1 auto;
+    height: 1px;
+  }
+
+  .menu-divider-line-start {
+    background: linear-gradient(to right, transparent, var(--primary));
+  }
+
+  .menu-divider-line-end {
+    background: linear-gradient(to left, transparent, var(--primary));
+  }
+
+  .menu-divider-diamond {
+    flex: 0 0 auto;
+    height: 11px;
+    width: 11px;
+    transform: rotate(45deg);
+    background: var(--primary);
+    box-shadow:
+      0 0 14px hsl(0 84% 60% / 0.7),
+      0 0 0 4px hsl(0 84% 60% / 0.16);
+  }
+
+  .menu-divider-dot {
+    flex: 0 0 auto;
+    height: 5px;
+    width: 5px;
+    border-radius: 9999px;
+    background: hsl(0 84% 60% / 0.55);
+  }
+
+  @keyframes sectionEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
