@@ -60,9 +60,21 @@ function Index() {
       {/* Categories */}
       <div className="menu-pattern-bg min-h-[calc(100vh-16rem)]">
         <div className="container max-w-2xl mx-auto px-4 py-8">
-        <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
-          منوی ما
-        </h2>
+        <div
+          className="menu-title"
+          style={{
+            animation: "sectionEntrance 0.5s cubic-bezier(0.22, 1, 0.36, 1) both",
+          }}
+        >
+          <h2 className="menu-title-text">منوی ما</h2>
+          <span className="menu-title-rule" aria-hidden="true">
+            <span className="menu-title-dot" />
+            <span className="menu-title-line menu-title-line-start" />
+            <span className="menu-title-diamond" />
+            <span className="menu-title-line menu-title-line-end" />
+            <span className="menu-title-dot" />
+          </span>
+        </div>
         
         <div className="grid grid-cols-2 gap-4">
           <div
