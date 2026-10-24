@@ -100,6 +100,29 @@ function Index() {
             </button>
           ))}
         </div>
+
+        {/* Divider */}
+        <div className="menu-divider" aria-hidden="true">
+          <span className="menu-divider-dot" />
+          <span className="menu-divider-line menu-divider-line-start" />
+          <span className="menu-divider-diamond" />
+          <span className="menu-divider-line menu-divider-line-end" />
+          <span className="menu-divider-dot" />
+        </div>
+
+        {/* About us */}
+        <section
+          className="rounded-xl border border-primary/25 bg-background/40 px-5 py-6 text-center shadow-card sm:px-8 sm:py-8"
+          style={{
+            animation: "sectionEntrance 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both",
+          }}
+        >
+          <h2 className="text-xl font-bold text-foreground sm:text-2xl">درباره ما</h2>
+          <span className="mx-auto mt-3 block h-[3px] w-14 rounded-full bg-gradient-to-r from-transparent via-primary to-transparent" />
+          <p className="mx-auto mt-4 max-w-xl text-base leading-8 text-foreground/80 sm:text-lg sm:leading-9">
+            به کافه بازیمون خوش اومدین. بیش از نیم قرن تلاش و تجربه و پشتکار پشتشه. دست کممون نگیرین
+          </p>
+        </section>
         </div>
       </div>
     </div>
