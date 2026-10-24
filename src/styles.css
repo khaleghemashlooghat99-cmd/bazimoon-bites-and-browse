@@ -442,6 +442,113 @@
     background: hsl(0 84% 60% / 0.55);
   }
 
+  /* ---- Divider options preview (pizza page only) ---- */
+  .divider-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 2rem;
+    padding: 1.25rem 1rem 1.5rem;
+    border: 1px dashed hsl(0 84% 60% / 0.35);
+    border-radius: 0.75rem;
+    background: hsl(0 0% 8% / 0.35);
+  }
+
+  .divider-option {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .divider-option-label {
+    margin: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--muted-foreground);
+  }
+
+  .menu-divider--tight {
+    margin: 0;
+  }
+
+  /* Option 2: circular icon badge flanked by hairlines and small gems. */
+  .menu-divider-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+
+  .menu-divider-badge-circle {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 46px;
+    border-radius: 9999px;
+    border: 1px solid hsl(0 84% 60% / 0.55);
+    background: radial-gradient(
+      circle at 50% 35%,
+      hsl(0 84% 60% / 0.3),
+      hsl(0 0% 8% / 0.92) 72%
+    );
+    box-shadow:
+      0 0 20px hsl(0 84% 60% / 0.4),
+      inset 0 0 14px hsl(0 84% 60% / 0.22);
+    color: var(--primary-glow);
+  }
+
+  .menu-divider-badge-gem {
+    flex: 0 0 auto;
+    height: 6px;
+    width: 6px;
+    transform: rotate(45deg);
+    background: hsl(0 84% 60% / 0.8);
+  }
+
+  /* Option 3: three gems on a hairline above a softer second rule. */
+  .menu-divider-triple {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-divider-triple-row {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .menu-divider-triple-gem {
+    flex: 0 0 auto;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background: var(--primary);
+    box-shadow: 0 0 12px hsl(0 84% 60% / 0.65);
+  }
+
+  .menu-divider-triple-gem-sm {
+    height: 6px;
+    width: 6px;
+    opacity: 0.75;
+    box-shadow: 0 0 8px hsl(0 84% 60% / 0.5);
+  }
+
+  .menu-divider-triple-shadow {
+    display: block;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      hsl(0 84% 60% / 0.35) 45%,
+      hsl(0 84% 60% / 0.35) 55%,
+      transparent
+    );
+  }
+
   @keyframes sectionEntrance {
     from {
       opacity: 0;
